@@ -2,7 +2,9 @@
 
 Una aplicación para buscar la imagen del pokemon que ingreses usando React y Redux.
 
-Link de la aplicacion montada en un hosting de Firebase
+- Link de la aplicacion montada en un hosting de Firebase
+
+
 https://pokeapp-3f4d8.web.app/origen
 
 ## Instalación
