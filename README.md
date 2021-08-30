@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Poke App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Una aplicación para buscar la imagen del pokemon que ingreses usando React y Redux.
 
-## Available Scripts
+## Instalación
 
-In the project directory, you can run:
+Para comenzar, siga los pasos a continuación:
 
-### `yarn start`
+- Instale todas las dependencias del proyecto con `npm install o yarn install`
+- Inicie el servidor de desarrollo con `npm start o yarn start`
+- Una vez que se inicia el servidor, apunte su navegador a http://localhost:3000/ para iniciar la aplicación
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Pagina principal
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<img src = "https://github.com/Majc23/Pokeapp/blob/3229d9663d59f84bf5992886c7e45e48cd52382d/public/Pokeapp.jpeg" />
 
-### `yarn test`
+- La página principal contiene una entrada con la cual se realizara la solicitud a la API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `yarn build`
+```bash
+├── README.md - This file.
+├── package.json # npm package manager file
+├── public
+│   └── index.html # public index.html
+│   
+└── src
+    ├── components # Carpeta de componentes
+    │   └── Form.js # Este es el componente que despliega la pagina principal      
+    ├── actions # Carpeta de acciones  
+    │   └── actions.js # Acciones
+    ├── reducers 
+    │   └── reducers.js # reducer for authentication actions
+    ├── routers 
+    │   └── AppRouter.js # This is the root of the app
+    ├── store 
+    │   └── store.js # Store to use redux
+    ├── App.js # Configuracion redux
+    ├── Api.js # Solicitud a la api
+    ├── index.css # Global styles
+    ├── types # constant that defines the type of actions
+    ├── BookshelfApp.js # implementation of redux
+    └── index.js # Used for DOM rendering
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
